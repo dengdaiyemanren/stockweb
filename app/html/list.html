@@ -1,0 +1,17 @@
+<table border="1"> 
+	<tr>
+		<td>user</td>
+		<td>sex</td>
+		<td>mail</td>
+		<td>oper</td>
+	</tr>
+	<tr ng-repeat="user in users"> <!-- for (var o in obj) {  }-->
+		<td>{{user.username}}</td>
+		<td>{{user.gender}}</td>
+		<td>{{user.email}}</td>
+		<td>
+			<a href="#/update/{{user.id}}/20">modify</a>
+			<a href="javascript:void(0)" >delete</a>
+		</td>
+	</tr>
+</table>
